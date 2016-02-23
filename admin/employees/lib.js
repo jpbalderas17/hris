@@ -47,9 +47,10 @@ EmployeeAdapter.method('getFormFields', function() {
 	        [ "birthday", {"label":"Date of Birth","type":"date","validation":""}],
 	        [ "gender", {"label":"Gender","type":"select","source":[["Male","Male"],["Female","Female"]]}],
 	        [ "marital_status", {"label":"Marital Status","type":"select","source":[["Married","Married"],["Single","Single"],["Divorced","Divorced"],["Widowed","Widowed"],["Other","Other"]]}],
-	        [ "ssn_num", {"label":"SSN/NRIC","type":"text","validation":"none"}],
-	        [ "nic_num", {"label":"NIC","type":"text","validation":"none"}],
-	        [ "other_id", {"label":"Other ID","type":"text","validation":"none"}],
+	        [ "ssn_num", {"label":"SSS","type":"text","validation":"none"}],
+	        [ "nic_num", {"label":"TIN","type":"text","validation":"none"}],
+	        [ "other_id", {"label":"Philhealth","type":"text","validation":"none"}],
+	        [ "pagibig", {"label":"Pagibig No","type":"text","validation":"none"}],
 	        [ "driving_license", {"label":"Driving License No","type":"text","validation":"none"}],
 	        /*[ "driving_license_exp_date", {"label":"License Exp Date","type":"date","validation":"none"}],*/
 	        [ "employment_status", {"label":"Employment Status","type":"select2","remote-source":["EmploymentStatus","id","name"]}],

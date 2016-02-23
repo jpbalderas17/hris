@@ -65,9 +65,9 @@ EmployeeAdapter.method('getFormFields', function() {
 	}
 	
 	if(this.checkPermission("Edit EPF/CPF Number") == "Yes"){
-		ssn_num = [ "ssn_num", {"label":"EPF/CPF/SS No","type":"text","validation":"none"}];
+		ssn_num = [ "ssn_num", {"label":"SSS","type":"text","validation":"none"}];
 	}else{
-		ssn_num = [ "ssn_num", {"label":"EPF/CPF/SS No","type":"placeholder","validation":"none"}];
+		ssn_num = [ "ssn_num", {"label":"SSS","type":"placeholder","validation":"none"}];
 	}
 	
 	if(this.checkPermission("Edit Employment Status") == "Yes"){
@@ -123,8 +123,9 @@ EmployeeAdapter.method('getFormFields', function() {
 	        [ "gender", {"label":"Gender","type":"select","source":[["Male","Male"],["Female","Female"]]}],
 	        [ "marital_status", {"label":"Marital Status","type":"select","source":[["Married","Married"],["Single","Single"],["Divorced","Divorced"],["Widowed","Widowed"],["Other","Other"]]}],
 	        ssn_num,
-	        [ "nic_num", {"label":"NIC","type":"text","validation":"none"}],
-	        [ "other_id", {"label":"Other ID","type":"text","validation":"none"}],
+	        [ "nic_num", {"label":"TIN","type":"text","validation":"none"}],
+	        [ "other_id", {"label":"Philhealth","type":"text","validation":"none"}],
+	        [ "pagibig", {"label":"Pagibig No","type":"text","validation":"none"}],
 	        [ "driving_license", {"label":"Driving License No","type":"text","validation":"none"}],
 	        employment_status,
 	        job_title,
